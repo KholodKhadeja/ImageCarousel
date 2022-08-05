@@ -1,0 +1,91 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+:root{
+    --basic-clr:#fa5252;
+    --sec-clr:#c92a2a;
+    --third-clr:#fa5252;
+    --dark-gray:#343a40;
+    --padd-px:5px;
+    --marg-top:10px;
+}
+h1{
+    font-size: 35px;
+    color: white;
+    text-align: center;margin-top: 5px;font-family: Macondo;
+}
+body{
+background-image: linear-gradient(to right top, var(--basic-clr),var(--sec-clr));
+background-repeat: no-repeat;
+background-size: 100%;
+background-attachment: fixed;
+
+}
+.mainContainer{
+margin:var(--marg-top) auto ;
+background-color: var(--dark-gray);
+border-radius: 5px;width: 70%;height: 80vh;
+box-shadow: 0 0 0.5rem rgba(251, 248, 248, 0.462);z-index: -5;
+}
+.wrapC{
+    border-radius: 10px;
+    width: 100%;height: 100%;
+    display: flex;flex-direction: row;gap: 10px;justify-content: center;align-items: center;
+    position: relative;
+}
+.midContainer{
+display: flex;flex-direction: column;gap: 20px;justify-content: center;align-items: center;
+}
+.dotCont{
+    display: flex;flex-direction: row;  gap:2px;justify-content: center;align-items: center;
+}
+.dotOn{
+    background-color:  var(--sec-clr);
+    border: none;color: white;
+}
+.dot{
+    display: flex;justify-content: center;align-items: center;font-weight: bold;
+border-radius: 10px;width: 20px;height: 20px;font-size: 14px;
+}
+.dotOff{
+    border: 1px solid var(--sec-clr);
+    background-color: white;color: black;
+}
+.icon{
+    width: 15px; 
+}
+.arrows{
+      background-color: white;  position: absolute;border-radius: 5px;
+      box-shadow: 0 0 3px white;
+    height: 40px;opacity:1;width: 50px;display: flex;justify-content: center;align-items: center;
+}
+.arrows:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 3px rgb(158, 158, 158);
+}
+.arrows:active{
+    transform: translateY(3px);
+}
+.leftArrow{
+    left:-20px;
+} 
+.rightArrow{
+right: -20px;
+}
+.imgCon{
+    display: flex;align-items: center;
+}
+#mainImg{
+width:450px;height: 350px;
+border-radius: 3px;z-index: 1;
+}
+#lefmainImg{
+    width:350px;height: 250px;opacity: 0.5;
+    border-radius: 3px;margin-right: -240px;z-index:0;
+}
+#rigmainImg{
+    width:350px;height: 250px;opacity: 0.5;
+    border-radius: 3px;margin-left: -240px;z-index: 0;
+}
+
+/*ADD KEYFRAMES AND STUDY THEM TO MAKE THE PROJECTS PRETTIER*/

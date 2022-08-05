@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Inter:wght@400;500;700&family=Josefin+Sans&family=Macondo&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,700&family=Nunito:wght@200;700;800&family=Quicksand:wght@300;400;600;700&family=Rubik+Bubbles&family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Supermercado+One&display=swap" rel="stylesheet">
+    <title>Image Carousel</title>
+</head>
+<body>
+    <h1>Image Carousel</h1>
+    <div class="mainContainer">
+        <div class="wrapC">
+            <div class="leftArrow arrows" id="leftArr"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 icon" fill="none" 
+                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" onclick="prevImg()">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+              </svg></div>
+              <div class="midContainer">
+                  <div class="imgCon">
+                    <img src="" alt="" id="lefmainImg">
+                    <img src="" alt="" id="mainImg">
+                    <img src="" alt="" id="rigmainImg">
+                  </div>
+                <div class="dotCont">
+                    <div id="0" class="dot">1</div>
+                    <div id="1" class="dot">2</div>
+                    <div id="2" class="dot">3</div>
+                    <div id="3" class="dot">4</div>
+                    <div id="4" class="dot">5</div>
+                </div>
+              </div>
+          
+            <div class="rightArrow arrows"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 icon" fill="none" 
+                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" onclick="nextImg()">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
